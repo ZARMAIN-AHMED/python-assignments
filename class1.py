@@ -28,7 +28,7 @@ Father_name : Ahmed"""
 print(id_card)
 
 
-# number
+# integar
 
 roll_num :int = 20
 print(type(roll_num))
