@@ -40,7 +40,13 @@ A simple and interactive **Agentic AI** course app built using **Python** and **
 
 1. **Clone this repository**  
    Open your terminal or command prompt and run:
+
+
    ```bash
 
    git clone https://github.com/ZARMAIN-AHMED/python-assignments.git
-  
+
+   pip install streamlit
+
+   streamlit run main.py
+
