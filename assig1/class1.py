@@ -10,14 +10,15 @@ print( "GIAIC stand for : " ,name)
 # integer(number)
 # float(.decimal)
 # boolean
-# list(array)
-# tuple(imutible type similar list)
+# list(array)mutable
+# tuple(imutible type similar list) count or index do kaam hoty h
 # dictionary(object)
-# set 
+# set  unorder or uniqe set mutable
 # non(none type)
-# frozen set 
+# frozen set immutable h or unqie alements methods h 
 # byte array
-
+# hashable 
+# unhashable
 # String
 
 snake_case : str = "sir asharib ali"
@@ -49,7 +50,7 @@ print(boolean)
 
 # list
 
-grocery: list[str] = ["apple", "cherry"]
+grocery: list[str] = ["apple", 13]
 print(type(grocery))
 print(grocery[-1])
 
@@ -68,3 +69,7 @@ user_data : dict[str,str] = {
 }
 print(user_data["fathername"])
 
+
+
+# tuple
+set1 = set = set ()
