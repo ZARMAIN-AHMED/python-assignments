@@ -1,15 +1,21 @@
+
+
 [tool.poetry]
-name = "webassig07"
+name = "agentic-ai-course-app"
 version = "0.1.0"
-description = "Add your description here"
-authors = ["Your Name <you@example.com>"]
+description = "A Streamlit-based Agentic AI course app with embedded videos and resources."
+authors = ["ZARMAIN-AHMED"]
 readme = "README.md"
-requires-python = ">=3.11"
+packages = [
+    { include = "webassig07" }
+]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-streamlit = "^1.43.2"
-# Add other dependencies here
+python = ">=3.10"
+streamlit = "^1.32.0"
+# Neeche zaroori dependencies bhi add karo agar koi aur library use ho rahi ho
+# jaise: pandas = "^2.2.0", requests = "^2.31.0" etc.
 
-[tool.poetry.packages]
-packages = [{ include = "webassig07" }]
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
