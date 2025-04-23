@@ -1,22 +1,15 @@
-[project]
-name = "webassig07"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [
-    "streamlit>=1.43.2",
-]
-
 [tool.poetry]
 name = "webassig07"
 version = "0.1.0"
-description = ""
+description = "Add your description here"
 authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+requires-python = ">=3.11"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-# add other dependencies here
+streamlit = "^1.43.2"
+# Add other dependencies here
 
 [tool.poetry.packages]
 packages = [{ include = "webassig07" }]
