@@ -1,21 +1,18 @@
 
-
 [tool.poetry]
 name = "agentic-ai-course-app"
 version = "0.1.0"
-description = "A Streamlit-based Agentic AI course app with embedded videos and resources."
+description = "Agentic AI Streamlit App"
 authors = ["ZARMAIN-AHMED"]
-readme = "README.md"
-packages = [
-    { include = "webassig07" }
-]
 
 [tool.poetry.dependencies]
-python = ">=3.10"
-streamlit = "^1.32.0"
-# Neeche zaroori dependencies bhi add karo agar koi aur library use ho rahi ho
-# jaise: pandas = "^2.2.0", requests = "^2.31.0" etc.
+python = "^3.8"
+streamlit = "^1.44.0"
+requests = "^2.32.3"
+tenacity = "^9.1.2"
+toml = "^0.10.2"
+tornado = "^6.4.2"
+watchdog = "^6.0.0"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.poetry.packages]
+packages = [{ include = "webassig07" }]
