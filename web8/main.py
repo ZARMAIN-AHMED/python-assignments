@@ -135,7 +135,7 @@ class MultiFileAnalyzer:
 
 # === Streamlit Setup ===
 st.set_page_config(page_title="Cyber Threat Toolkit", page_icon="🛡️", layout="centered")
-st.title("🛡️ Cyber Threat Toolkit (Python + Streamlit + OOP)")
+st.title("🛡️ Cyber Threat Toolkit ")
 
 st.sidebar.title("🔍 Tool Guide")
 st.sidebar.info(
