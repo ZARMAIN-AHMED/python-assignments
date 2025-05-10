@@ -223,4 +223,4 @@ with tab3:
 
 # === Footer ===
 st.markdown("---")
-st.caption("Made with ❤️ by Zarmain Ahmed")
+st.caption("Made by Zarmain Ahmed ❤️")
