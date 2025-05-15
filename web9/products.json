@@ -9,7 +9,7 @@
         "description": "Learn OOP in Python",
         "price": 30.0
     },
-       {
+    {
         "name": "Agentic ai course",
         "description": "course",
         "price": 15.0
@@ -29,7 +29,6 @@
         "description": "Modern, reusable Figma components for SaaS products and landing pages",
         "price": 12.0
     },
-   
     {
         "name": "DevMart E-commerce Template",
         "description": "Full e-commerce frontend in Next.js and Tailwind, inspired by this site",
@@ -44,7 +43,10 @@
         "name": "Python Game Source Code",
         "description": "Download and learn from this fully playable Pygame-based platformer",
         "price": 10.0
+    },
+    {
+        "name": "Flip card ",
+        "description": "Flip card game build with python and streamlit",
+        "price": 23.0
     }
- 
-
 ]
