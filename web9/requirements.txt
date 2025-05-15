@@ -1,0 +1,9 @@
+streamlit==1.44.0
+requests==2.32.3
+tenacity==9.1.2
+toml==0.10.2
+tornado==6.4.2
+watchdog==6.0.0
+Flask
+pydantic
+reportlab  # For generating PDF in future
