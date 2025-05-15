@@ -1,13 +1,16 @@
 # models/payment.py
 import stripe
 import os
+from dotenv import load_dotenv
 
-stripe.api_key = os.getenv("STRIPE_SECRET_KEY", "sk_test_your_test_key_here")  # fallback if env missing
+load_dotenv()  
+
+stripe.api_key = os.getenv("STRIPE_SECRET_KEY")
 
 class Payment:
     def __init__(self, user, amount):
         self.user = user
-        self.amount = int(amount * 100)  # Convert to cents (Stripe requires)
+        self.amount = int(amount * 100) 
 
     def process_payment(self):
         try:
@@ -25,15 +28,11 @@ class Payment:
                     "quantity": 1,
                 }],
                 mode="payment",
-                success_url="https://example.com/success",  # Replace with your site
-                cancel_url="https://example.com/cancel",    # Replace with your site
+                success_url="https://example.com/success",  # Replace these with actual URLs
+                cancel_url="https://example.com/cancel",
                 customer_email=self.user.email
             )
-            return session.url  # Stripe-hosted checkout page link
+            return session.url
         except Exception as e:
             print("Stripe error:", e)
             return None
-
-
-from dotenv import load_dotenv
-load_dotenv()
