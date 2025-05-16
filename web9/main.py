@@ -10,11 +10,11 @@ from utils import require_login
 st.set_page_config(page_title="DevMart – Python Marketplace")
 st.image("assets/dev.png", width=100)
 
-# Initialize session
+
 if "user" not in st.session_state:
     st.session_state.user = None
 
-# Landing Page
+
 if not st.session_state.user:
     st.title("🛍️ Welcome to DevMart!")
     st.subheader("Eco-friendly E-commerce Platform")
@@ -88,7 +88,6 @@ with st.form("upload_form"):
         else:
             st.warning("⚠️ Please fill all fields correctly.")
 
-# Product List
 st.header("🛒 Available Products")
 for product in products:
     with st.container():
@@ -99,8 +98,7 @@ for product in products:
             user_carts[email].add_item(product)
             st.success(f"{product.name} added to cart!")
 
-# Cart Summary
-# Cart Summary
+
 st.divider()
 st.header("🧺 Your Cart")
 cart = user_carts[email]
